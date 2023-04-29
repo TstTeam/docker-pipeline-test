@@ -5,4 +5,4 @@ ADD . /app/wdio/
 
 RUN npm install
 
-CMD curl npm run test; sh generate-allure.sh
+CMD npm run test; node worker/run_scheduler.js 

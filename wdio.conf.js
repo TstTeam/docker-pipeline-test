@@ -1,5 +1,4 @@
 
-const reportApi = require('./send_reports.js');
 const Reporter = require('./support/Reporter');
 
 exports.config = {
@@ -165,9 +164,9 @@ exports.config = {
      * @param {Object} config wdio configuration object
      * @param {Array.<Object>} capabilities list of capabilities details
      */
-    onPrepare: async function (config, capabilities) {
-        await reportApi.createAllureProject();
-    },
+    // onPrepare: async function (config, capabilities) {
+    //     await reportApi.createAllureProject();
+    // },
     /**
      * Gets executed before a worker process is spawned and can be used to initialise specific service
      * for that worker as well as modify runtime environments in an async fashion.
@@ -285,9 +284,9 @@ exports.config = {
      * @param {Array.<Object>} capabilities list of capabilities details
      * @param {Array.<String>} specs List of spec file paths that ran
      */
-    afterSession: async function (config, capabilities, specs) {
+    // afterSession: async function (config, capabilities, specs) {
         
-    },
+    // },
     /**
      * Gets executed after all workers got shut down and the process is about to exit. An error
      * thrown in the onComplete hook will result in the test run failing.
@@ -296,9 +295,9 @@ exports.config = {
      * @param {Array.<Object>} capabilities list of capabilities details
      * @param {<Object>} results object containing test results
      */
-    onComplete: async function () {
+    // onComplete: async function () {
        
-    },
+    // },
     /**
     * Gets executed when a refresh happens.
     * @param {String} oldSessionId session ID of the old session
