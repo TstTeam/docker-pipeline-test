@@ -20,6 +20,10 @@ describe('Testing docker project', () => {
     it('Case two login', async () => {
        console.log("Test");
     });
+
+    it('Case t3 login', async () => {
+        console.log("Test");
+     });
 });
 
 
