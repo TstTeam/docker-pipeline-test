@@ -17,21 +17,13 @@ describe('Testing docker project', () => {
             'You logged into a secure area!');
     });
 
-    it('Case two login', async () => {
-       console.log("Test");
-    });
+   it('Case 1', async () => {
+      console.log("Test");
+   });
 
-      it('Case t5 login', async () => {
+   it('Case 2', async () => {
         console.log("Test");
-     });
-
-   //  it('Case t3 login', async () => {
-   //      console.log("Test");
-   //   });
-
-   //   it('Case t4 login', async () => {
-   //      console.log("Test");
-   //   });
+   });
 });
 
 
