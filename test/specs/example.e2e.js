@@ -24,6 +24,10 @@ describe('Testing docker project', () => {
    it('Case 2', async () => {
         console.log("Test");
    });
+
+   it('Case 3', async () => {
+    console.log("Test");
+    });
 });
 
 
